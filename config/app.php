@@ -263,13 +263,13 @@ return [
 			'className' => Connection::class,
 			'driver' => Mysql::class,
 			'persistent' => false,
-			'host' => 'localhost',
+			'host' => '172.30.168.40',
 			/*
 			 * CakePHP will use the default DB port based on the driver selected
 			 * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
 			 * the following line and set the port accordingly
 			 */
-			//'port' => 'non_standard_port_number',
+			'port' => '3306',
 			/*
 			 * It is recommended to set these options through your environment or app_local.php
 			 */
@@ -283,7 +283,7 @@ return [
 			'timezone' => 'UTC',
 			'flags' => [],
 			'cacheMetadata' => true,
-			'log' => false,
+			'log' => true,
 
 			/*
 			 * Set identifier quoting to true if you are using reserved words or
@@ -314,8 +314,8 @@ return [
 			'className' => Connection::class,
 			'driver' => Mysql::class,
 			'persistent' => false,
-			'host' => 'localhost',
-			//'port' => 'non_standard_port_number',
+			'host' => '172.30.168.40',
+			'port' => '3306',
 			'username' => 'my_app',
 			'password' => 'secret',
 			'database' => 'test_myapp',
